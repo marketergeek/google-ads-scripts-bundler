@@ -31,7 +31,7 @@ npm run build_dev
 ```
 for production run
 ```bash
-npm tun build_prod
+npm run build_prod
 ```
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
