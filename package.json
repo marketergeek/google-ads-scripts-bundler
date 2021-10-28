@@ -1,0 +1,26 @@
+{
+  "name": "google-ads-scripts-bundler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.js",
+  "scripts": {
+    "build_dev": "cross-env-shell NODE_ENV=development rollup -c",
+    "build_prod": "cross-env-shell NODE_ENV=production rollup -c",
+    "test": "cross-env-shell NODE_ENV=test mocha **/*.spec.js --require @babel/register "
+  },
+  "author": "Marketergeek",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.4",
+    "@babel/register": "^7.13.16",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-html": "^0.2.3",
+    "@rollup/plugin-node-resolve": "^13.0.6",
+    "cross-env": "^7.0.3",
+    "dotenv": "^10.0.0",
+    "rollup": "^2.50.5",
+    "@rollup/plugin-replace": "^3.0.0",
+    "rollup-plugin-cleanup": "^3.2.1"
+  }
+}
