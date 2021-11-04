@@ -10,5 +10,10 @@ module.exports = {
     },
     "rules": {
         "no-unused-vars": "off"
+    },
+    "globals": {
+        "Logger": true,
+        "AdsApp": true,
+        "AdsManagerApp": true
     }
 };

@@ -4,6 +4,7 @@ import { nodeResolve } from '@rollup/plugin-node-resolve';
 import replace from '@rollup/plugin-replace';
 import dotenv from 'dotenv';
 import eslint from '@rollup/plugin-eslint';
+
 dotenv.config();
 const {NODE_ENV} = process.env;
 
@@ -24,5 +25,5 @@ export default {
             preventAssignment: true
         })
         
-    ],
+    ]
 };
