@@ -3,6 +3,7 @@ import cleanup from 'rollup-plugin-cleanup';
 import { nodeResolve } from '@rollup/plugin-node-resolve';
 import replace from '@rollup/plugin-replace';
 import dotenv from 'dotenv';
+import eslint from '@rollup/plugin-eslint';
 dotenv.config();
 const {NODE_ENV} = process.env;
 
@@ -15,6 +16,7 @@ export default {
     },
     context: 'this',
     plugins: [
+        eslint(),
         nodeResolve(),
         babel({ babelHelpers: 'bundled' }),
         cleanup(),
